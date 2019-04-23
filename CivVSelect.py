@@ -1,5 +1,6 @@
-import random, sys
+import random, sys, argparse
 
+#ARGUMENT PARSING
 argc = len(sys.argv)
 
 numPlayers = 1
@@ -10,9 +11,32 @@ if (argc > 1):
 if (argc > 2):
     numCivs = int(sys.argv[2])
 
-civList = ["America","Arabia","Assyria","Austria","Aztecs","Babylon","Brazil","Byzantium","Carthage","Celts","China","Denmark","Netherlands","Egypt","England","Ethiopia","France","Germany","Greece","Huns","Incans","India","Indonesia","Iroquois","Japan","Maya","Mongolia","Morocco","Ottomans","Persia","Poland","Polynesia","Portugal","Rome","Russia","Shoshone","Siam","Songhai","Spain","Sweden","Venice","Zulus"]
+gk = False
+bnw = False
+dlc = True
+noVenice = True
+noKorea = True
 
-if(len(civList) < (numPlayers * numCivs)+1):
+#creates list to distribute civs to players
+civList = open("civs/BaseGame.txt").read().splitlines()
+if(gk):
+    civList += open("civs/GodsKings.txt").read().splitlines()
+if(bnw):
+    civList += open("civs/BraveNewWorld.txt").read().splitlines()
+if(dlc):
+    civList += open("civs/DLC.txt").read().splitlines()
+civList = set(civList)
+if(noVenice):
+    civList -= set(["Venice (Enrico Dandolo)"])
+if(noKorea):
+    civList -= set(["Korea (Sejong)"])
+civList = list(civList)
+
+#ensures requested number of civs doesn't exceed number of civs
+civsRequested = (numPlayers * numCivs) + 1
+if(noVenice): #Venice counts as "bonus" civ
+    civsRequested -= 1
+if(len(civList) < civsRequested):
     sys.exit("\nError: Too many players/civs; try decreasing the number of civs per player.\n")
 
 print()
@@ -20,7 +44,7 @@ def getCiv():
     i = random.randint(0,len(civList)-1)
     civ = civList.pop(i)
     print(civ, end='')
-    if (civ == "Venice"):
+    if (civ == "Venice (Enrico Dandolo)"):
         return True
     return False
 
