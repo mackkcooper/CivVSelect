@@ -1,0 +1,18 @@
+America|George Washington
+Arabia|Harun al-Rashid
+Aztecs|Montezuma I
+China|Wu Zetian
+Egypt|Ramesses II
+England|Elizabeth
+France|Napoleon
+Germany|Bismarck
+Greece|Alexander
+India|Gandhi
+Iroquois|Hiawatha
+Japan|Oda Nobunaga
+Ottomans|Suleiman
+Persia|Darius
+Rome|Augustus
+Russia|Catherine
+Siam|Ramkhamhaeng
+Songhai|Askia
