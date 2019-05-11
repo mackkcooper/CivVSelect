@@ -1,10 +1,10 @@
-Austria (Ashurbanipal)
-Byzantium (Theodora)
-Carthage (Dido)
-Celts (Boudicca)
-Ethiopia (Haile Selassie)
-Huns (Attila)
-Maya (Pacal)
-Netherlands (William)
-Spain (Isabella)
-Sweden (Gustavus Adolphus)
+Austria|Ashurbanipal
+Byzantium|Theodora
+Carthage|Dido
+Celts|Boudicca
+Ethiopia|Haile Selassie
+Huns|Attila
+Maya|Pacal
+Netherlands|William
+Spain|Isabella
+Sweden|Gustavus Adolphus

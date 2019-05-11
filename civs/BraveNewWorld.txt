@@ -1,10 +1,10 @@
-Assyria (Ashurbanipal)
-Brazil (Pedro II)
-Ethiopia (Haile Selassie)
-Indonesia (Gajah Mada)
-Morocco (Ahmad al-Mansur)
-Poland (Casimir III)
-Portugal (Maria I)
-Shoshone (Pocatello)
-Venice (Enrico Dandolo)
-Zulu (Shaka)
+Assyria|Ashurbanipal
+Brazil|Pedro II
+Ethiopia|Haile Selassie
+Indonesia|Gajah Mada
+Morocco|Ahmad al-Mansur
+Poland|Casimir III
+Portugal|Maria I
+Shoshone|Pocatello
+Venice|Enrico Dandolo
+Zulu|Shaka
